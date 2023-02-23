@@ -29,6 +29,8 @@ Open your Grafana instance and navigate to the "Configuration" page from the lef
 
 - In the "URL" field, enter the endpoint URL of the Kubecost API you want to connect to. The URL should be in the format: https://[Your-Kubecost-Domain]/model/[endpoint]
 
+<img width="793" alt="2023-02-23_09-55-40" src="https://user-images.githubusercontent.com/101200254/220943923-712701b4-0cbd-465b-8181-c2286eef3865.png">
+
 - In the "Access" section, select the type of authentication you want to use (if any) to connect to the API. You can choose from "No Auth", "Basic Auth", and "Bearer Token".
 
 - If you choose to use authentication, provide the necessary credentials or token in the fields provided.
@@ -49,7 +51,9 @@ Create a new panel by clicking the "+" button on a dashboard.
 
 - Click on the "Panel Data Source" dropdown menu and select the Kubecost API datasource you just created.
 
-- Configure the panel settings and queries as needed.
+- Configure the panel settings, queries, and paramaters as needed.
+
+<img width="1005" alt="2023-02-23_10-00-01" src="https://user-images.githubusercontent.com/101200254/220944212-f80b22a9-eccc-46e9-aa00-2165c5d168b0.png">
 
 - Save the panel and add it to the dashboard.
 
