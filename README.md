@@ -41,7 +41,9 @@ Open your Grafana instance and navigate to the "Configuration" page from the lef
 
 - In the "HTTP settings" section, you can configure the HTTP method, request timeout, and headers.
 
-- Scroll down to the "JSON API Query" section and provide the necessary parameters to query the Kubecost API. You can provide these queries and parameters at the datasource directly or provide them later during panel creation. Paramaters can be found in Kubecosts API docs, JSONPath query examples can be found in this repo at /kubecost-api-jsonpath-queries.md.
+- Scroll down to the "JSON API Query" section and provide the necessary parameters to query the Kubecost API. You can provide these queries and parameters at the datasource directly or provide them later during panel creation.
+
+- Paramaters can be found in Kubecosts API docs [https://docs.kubecost.com/apis/apis-overview], JSONPath query examples can be found here: [https://github.com/kubecost/kubecost-grafana-json-integration/blob/main/kubecost-api-jsonpath-queries.md]
 
 Once you have configured the datasource, click the "Save & Test" button at the bottom of the page to test the connection.
 
