@@ -10,8 +10,8 @@ Grafana is a popular open-source platform used for data visualization and monito
 In this guide, we will walk you through the steps to set up a JSON API datasource in Grafana to access the data collected by Kubecost.
 
 ## Prerequisites
-Kubecost installed and running in your Kubernetes cluster.
-Grafana instance installed and running.
+- Kubecost installed and running in your Kubernetes cluster.
+- Grafana instance installed and running.
 
 ## Steps to Set Up a JSON API Datasource for Kubecost in Grafana
 Open your Grafana instance and navigate to the "Configuration" page from the left-hand menu.
@@ -48,7 +48,3 @@ Create a new panel by clicking the "+" button on a dashboard.
 - Configure the panel settings and queries as needed.
 - Save the panel and add it to the dashboard.
 - You can now use the Kubecost API data to create custom dashboards and visualizations in Grafana.
-
-``
-SELECT sum(kubecost_total_cost) FROM cost_model WHERE namespace = 'your-namespace' AND $__timeFilter()
-``
