@@ -44,7 +44,11 @@ Once you have set up the Kubecost API datasource, you can use it to create dashb
 
 Create a new panel by clicking the "+" button on a dashboard.
 - Select the visualization type you want to use.
+
 - Click on the "Panel Data Source" dropdown menu and select the Kubecost API datasource you just created.
+
 - Configure the panel settings and queries as needed.
+
 - Save the panel and add it to the dashboard.
+
 - You can now use the Kubecost API data to create custom dashboards and visualizations in Grafana.
