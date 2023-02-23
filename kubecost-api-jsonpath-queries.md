@@ -1,4 +1,4 @@
-Using JSONPath Queries with the Kubecost API
+# Using JSONPath Queries with the Kubecost API
 
 To use the Grafana JSON plugin with the Kubecost REST API that returns nested JSON, you'll need to use JSONPath queries to extract the data you want to visualize in Grafana. Here's a step-by-step guide on how to do it:
 
