@@ -175,36 +175,4 @@ $.data.items[*].totalCost
 ```
 This will return an array of numbers [108.0967975893,<totalCost2>,<totalCost3>].
 
-
-## Bar Graph Example
-
-- Open Grafana and create a new dashboard.
-
-- Add a new panel by clicking on the "Add panel" button.
-
-- Select "Bar Gauge" as the panel type.
-
-- Under "Data Source", select "JSON" as the data source.
-
-- In the "JSON URL" field, paste the following URL: https://demo.kubecost.xyz/model/allocation/external?window=7d&aggregate=namespace&accumulate=true&cloudJoin=label:kubernetes_namespace
-
-- In the "JSON Path" field, enter the following JSONPath query to extract the data you need:
-
-```
-$.series[0].fields[1].values[0][*]
-```
-This query extracts the "cost" data for each "namespace" from the JSON payload.
-
-- Under "Visualization", select "Bar Gauge".
-
-- Under "Field", select the "cost" field.
-
-- Under "Options", select "Stacked" to display the bars as stacked.
-
-- Under "Options", select "Show Legend" to display a legend.
-
-Customize the panel as desired, adjusting settings like the panel title, font size, colors, and more.
-
-Save the panel and view the results.
-
-With these steps, you should be able to create an interesting bar graph using Grafana with a JSON data source and JSONPath queries. You can experiment with different JSONPath queries and panel types to create different types of visualizations, depending on the data you're working with.
+You can experiment with different JSONPath queries and panel types to create different types of visualizations, depending on the data you're working with.
