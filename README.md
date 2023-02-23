@@ -15,26 +15,30 @@ Grafana instance installed and running.
 
 ## Steps to Set Up a JSON API Datasource for Kubecost in Grafana
 Open your Grafana instance and navigate to the "Configuration" page from the left-hand menu.
+
 - Click on the "Data Sources" option.
+
 - Click on the "Add data source" button in the top right corner of the page.
+
 - Select "JSON API" as the datasource type.
+
 - Provide a name for the datasource in the "Name" field.
+
 - In the "URL" field, enter the endpoint URL of the Kubecost API you want to connect to. The URL should be in the format: https://[Your-Kubecost-Domain]/model/[endpoint]
+
 - In the "Access" section, select the type of authentication you want to use (if any) to connect to the API. You can choose from "No Auth", "Basic Auth", and "Bearer Token".
+
 - If you choose to use authentication, provide the necessary credentials or token in the fields provided.
-Once you have configured the datasource, click the "Save & Test" button at the bottom of the page to test the connection.
+
 - In the "HTTP settings" section, you can configure the HTTP method, request timeout, and headers.
+
 - Scroll down to the "JSON API Query" section and provide the necessary parameters to query the Kubecost API. You can use the following parameters to retrieve cost data:
-*query*: The query to run. You can use the following query to retrieve cost data:
-scss
-Copy code
-sum(kubecost_total_cost) by (namespace)
-*step*: The resolution of the data. For example, 5m for 5 minutes.
-*start and end*: The start and end time of the data in Unix timestamp format.
+
+[Example]
 
 Once you have configured the datasource, click the "Save & Test" button at the bottom of the page to test the connection.
 
-##Using the Kubecost API Datasource in Grafana
+## Using the Kubecost API Datasource in Grafana
 
 Once you have set up the Kubecost API datasource, you can use it to create dashboards and visualizations in Grafana. To use the datasource in a panel:
 
