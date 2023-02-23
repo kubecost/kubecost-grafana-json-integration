@@ -8,7 +8,7 @@ Kubecost is a Kubernetes cost allocation and optimization platform that provides
 
 Grafana is a popular open-source platform used for data visualization and monitoring. It supports a wide range of datasources, including JSON API, which allows you to connect Grafana to any RESTful API that returns data in JSON format.
 
-When deploying Kubecost, the Helm chart contains a bundled Grafana/Prometheus, but those metrics only reflect "live" on-demand usage data. The Kubecost Cost Model reconciles that usage data alongside cloud billing data, and adjusts the on-demand costs as needed. Because the cloud billing is delayed, the Kubecost JSON API is the only way to get cost data that has been accurattely reconciled. 
+When deploying Kubecost, the Helm chart contains a bundled Grafana/Prometheus, but those metrics only reflect "live" on-demand usage data. The Kubecost Cost Model reconciles that usage data alongside cloud billing data, and adjusts the on-demand costs to reflect your actual cloud provider bills. Because the cloud billing is delayed, the Kubecost JSON API is the only way to get cost data that has been accurattely reconciled. 
 
 The JSON APIs found at the ```/model``` URL endpoint allow you to pull the same cost data that is reflected via the Kubecost UI in the format of your choice.
 
