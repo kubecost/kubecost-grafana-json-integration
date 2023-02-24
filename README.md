@@ -31,7 +31,7 @@ Open your Grafana instance and navigate to the "Configuration" page from the lef
 
 - Provide a name for the datasource in the "Name" field.
 
-- In the "URL" field, enter the endpoint URL of the Kubecost API you want to connect to. The URL should be in the format: https://[Your-Kubecost-Domain]/model/[endpoint]
+- In the "URL" field, enter the endpoint URL of the Kubecost API you want to connect to. The URL should be in the format: ```https://[Your-Kubecost-Domain]/model/[endpoint]```
 
 <img width="793" alt="2023-02-23_09-55-40" src="https://user-images.githubusercontent.com/101200254/220943923-712701b4-0cbd-465b-8181-c2286eef3865.png">
 
