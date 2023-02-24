@@ -91,24 +91,19 @@ Suppose your Kubecost /model/allocation API returns data that looks like this:
     ]
 }
 ```
+
 You can use the following JSON Path queries:
+
 ```
 $.data:
 ```
 This will return the entire data array.
-```
-$.data[0]
-```
-This will return the first object in the data array.
 
-```
-$.data[0]['kc-demo-dev']:
-``` 
-This will return the object with the key kc-demo-dev in the first object of the data array.
 ```
 $.data[*]['kc-demo-dev'].name
 ``` 
 This will return the value of the name property for all objects with the key kc-demo-dev in the data array.
+
 ```
 $.data[*]['kc-demo-dev'].ramCost
 ``` 
